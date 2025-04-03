@@ -1,95 +1,70 @@
-getgenv().ConfigsKaitun = {
-	["Safe Mode"] = false, -- Will be pass all anti cheat (but slow farm)
-	
-	["Melee"] = {
-		["Death Step"] = true,
-		["Electric Claw"] = true,
-		["Dragon Talon"] = true,
-		["Sharkman Karate"] = true,
-		["Superhuman"] = true,
-		["God Human"] = true,
-	},
-
-	["Sword"] = {
-		-- : World 1
-		["Saber"] = true,
-		["Pole"] = false,
-		-- : World 2
-		["Midnight Blade"] = true,
-		["Shisui"] = true,
-		["Saddi"] = true,
-		["Wando"] = true,
-		["Rengoku"] = true,
-		["True Triple Katana"] = true,
-		-- : World 3
-		["Yama"] = true,
-		["Tushita"] = true,
-		["Canvander"] = true,
-		["Buddy Sword"] = true,
-		["Twin Hooks"] = true,
-		["Hallow Scythe"] = true,
-		["Cursed Dual Katana"] = true,
-	},
-
-	["Gun"] = {
-		-- : World 2
-		["Kabucha"] = true,
-		-- : World 3
-		["Venom Bow"] = true,
-		["Skull Guitar"] = true,
-	},
-
-	["Mastery"] = {
-		["Melee"] = true,
-		["Sword"] = true,
-		["Devil Fruits"] = true,
-
-		["Configs"] = {
-			["Selected All Sword"] = true,
-			["Select Sword"] = {"Saber","Cursed Dual Katana"},
-		}
-	},
-
-	["Race"] = {
-		["v2"] = true,
-		["v3"] = true,
-		["Locked"] = {
-			["Mink"] = true,
-			["Human"] = true,
-			["Skypiea"] = true,
-			["Fishman"] = true,
-		},
-	},
-
-	["Fruit"] = {
-		["Main Fruit"] = {"Dough-Dough"},
-		["Sec Fruit"] = {"Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha"},
-		["Safe Fruit"] = {
-			"Dough-Dough",
-			"Dragon-Dragon"
-		},
-	},
-
-	["Quest"] = {
-		["Rainbow Haki"] = true,
-		["Pull Lever"] = true,
-		["Musketeer Hat"] = true,
-		["Dough Mirror"] = true,
-		["Shark Anchor"] = {
-			["Enable"] = true,
-			["Money"] = 25_000_000,
-		},
-	},
-
-	["Currency"] = {
-		["Lock Fragment"] = 30_000,
-	},
-
-	["Performance"] = {
-		["White Screen"] = false,
-		["Booster FPS"] = false,
-		["Lock FPS"] = 240,
-		["AFK Timeout"] = 150,
-	},
+getgenv().Config = {
+ ["Team"] = "Pirates",
+ ["Safe Health"] = {40, 50},
+ ["Skip"] = { 
+ ["Fruit"] = {["Enabled"] = true,
+ ["Avoid Fruit"] = {
+ "Portal-Portal", 
+ "Kitsune-Kitsune"
+ }
+ },
+ ["Avoid V4"] = true
+ },
+ ["Hunt Method"] = {
+ ["Use Move Predict"] = true,
+ ["Hit and Run"] = true
+ },
+ ["Spam All Skill On V4"] = {
+ ["Enabled"] = true,
+ ["Weapons"] = {"Melee", "Gun", "Sword", "Blox Fruit"}
+ },
+ ["Chat"] = {
+ ["Enabled"] = true,
+ ["Message"] = {"vxeze hub bounty"}
+ },
+ ["Custom Y Run"] = {
+ ["Enabled"] = false,
+ ["Y Run"] = 100
+ },
+ ["Misc"] = {
+ ["Auto Store Fruit"] = true,
+ ["Auto Random Fruit"] = true,
+ ["White Screen"] = false,
+ ["Click Delay"] = 0.1,
+ },
+ ["Items"] = {["Use"] = {"Melee", "Gun", "Sword"},
+ ["Melee"] = {
+ ["Enable"] = true,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 1.5},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["C"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ }
+ },
+ ["Blox Fruit"] = {
+ ["Enable"] = false,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 1.2},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
+ ["C"] = {["Enable"] = true, ["HoldTime"] = 0},
+ ["V"] = {["Enable"] = false, ["HoldTime"] = 0},
+ ["F"] = {["Enable"] = false, ["HoldTime"] = 0}
+ }
+ },
+ ["Sword"] = {
+ ["Enable"] = true,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ } 
+ },
+ ["Gun"] = {
+ ["Enable"] = true, 
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ } 
+ }
+ }
 }
-loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubAutoBounty"))()
